@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Treehouse Forms</title>
+
+
+    <!-- Custom CSS -->
+    <link href="css/fields.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="navbartop">
+            <p>THE CODE REVIEW</p>
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="headertop">
+            <h1>Sign up for our newsletter</h1>
+            <h2>Get the latest news on how your code is doing right in your inbox</h2>
+
+            <div class="horizline">
+            </div>
+   
+            <div class="horizline">
+            </div>
+   
+            <div class="horizline">
+            </div>
+   
+            <div style="line-height:50%;">
+                <br>
+             </div>
+         
+            <div class="horizline">        
+            </div>
+            <br>
+
+        </div>
+    </header>
+
+        <div class="formcontainer">
+ 
+            <form id="form1">
+<!--                     <form action="#0">
+ -->
+            <FIELDSET>
+            <LEGEND><b>Contact Information</b></LEGEND>
+           
+                        
+                      <div>
+                        <label for="fullname">Full Name <i>(required)</i></label>
+                        <input type="text" id="fullname" name="fullname" required placeholder="Required"/>
+                      
+                      </div>
+                      
+                      
+                      <div>
+                        <label for="email">Email Address <i>(required)</i></label>
+                       
+                       <input type="email" id="email" name="email" required placeholder="Required" />
+                       <div class="requirements">
+                       </div>
+                      </div>
+                       
+                    <div>
+                       <label>Telephone</label>
+                       <input type='tel' pattern='^\d{3}.\d{3}.\d{4}|\d{10}|\d{3}-\d{3}-\d{4}' placeholder='999.999.9999' name ="telephone      "> 
+                    </div>
+                                            
+                    <div>
+                        <label for="street">Street Address</label>
+                        <input type="text" id="street" name="street"/>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city"/>
+                    </div>
+
+                    <div>
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip"/>
+                    </div>
+                    
+                    <div>
+                        <label for="expect">Expected Use %</label>
+                        <input type="text" id="expect" pattern='^(100|[1-9]?[0-9])$' placeholder="% of likelihood you'll read this newsletter? (0-100)">
+                    </div>
+                    
+
+                    <div>
+                        <label for="dobdate">Birthdate</label>
+                        <input type="text" id="dobdate" name="dobdate"/>
+                    </div>
+                </FIELDSET>    
+                    <br>
+                    <div class="horizline">
+                    </div>
+                    <div class="horizline">
+                    </div>
+
+                <FIELDSET>  
+                    <legend><b>Newsletter</b></legend>
+                    
+                  <h3>Select the newsletters you would like to receive.</h3>
+                    <br>
+                    <label class="ckbox"><input type="checkbox" id="cbox1a" > HTML News</label><br>
+                    <label class="ckbox"><input type="checkbox" id="cbox2a" > CSS News</label><br>
+                    <label class="ckbox"><input type="checkbox" id="cbox3a" > JavaScript News</label><br>
+                    
+                    <h3>Select the newsletters you would like to receive.</h3>
+                    <label class="radbutton"><input type="radio" name="rbutton1" >HTML</label>
+                    <label class="radbutton"><input type="radio" name="rbutton1" >Plain text</label>
+            
+
+                    <h3>Other topics you'd like to hear about</h3>
+   <!--                  <label class="textbx"><input type="textarea" rows="4" cols = "50" wrap="hard" id="textarea1" ><br>
+    -->
+                
+                    <textarea name="message">
+                    </textarea>
+                </FIELDSET>        
+
+                    </form>
+                        <br>
+                
+                      <br>     
+                    
+                    <button type="submit" form="form1" value="Submit">Sign Up</button>
+                        
+                    <p><i>Copyright The Code Review</i></p>                
+
+                </div>
+    
+
+
+
+
+</body>
+
+</html>

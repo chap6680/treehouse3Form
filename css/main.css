@@ -1,0 +1,201 @@
+
+body{
+    text-align: center;
+    color: #fff;
+    background: #18bc9c;
+margin-left: 5%;
+margin-right: 5%;
+
+}
+
+h2 {
+text-align:left;
+}
+
+h3{
+
+text-align:left;
+margin-bottom:0;	
+}
+
+.navbartop{
+ 	list-style-type: none;
+    margin: 0;
+    text-align:center;
+    padding: 0;
+    color:white;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+
+ .horizline {
+	background: #fff ;
+	width:100%;
+	height: .1em;
+	text-align:center;
+ }
+
+  .horizline2{
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    width:50%;
+      }
+
+
+   label {
+   	display:inline-block;
+ 	width:90%;
+    text-align:left;
+    font-size:1.25em;
+    line-height:2em;
+    padding-right: 8px;
+    font-weight:bold;
+
+	}
+
+
+input, select {
+    width:90%;
+    font-size:1.5em;
+    margin-bottom:5px;
+    line-height:1.5em;
+    padding:2px 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+}
+
+/*
+label input[type=checkbox]{
+  display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+  
+}
+*/
+
+input[type=checkbox], input[type=radio]{
+ 	width: .5em;
+    height: 1.5em;
+    padding: 0;
+    margin:0 10px 0 0;
+
+    vertical-align: top;
+    position: relative;
+    top: -1px;
+    *overflow: hidden;
+  
+}
+
+input[type=radio]{
+	height:1em;
+	}
+
+label.checkbox, label.radbutton{
+	vertical-align: top;
+    line-height: 1.5em;
+    margin: 2px 0;
+    display: block;
+    height: 1.5em;
+}
+
+label.radbutton{
+	margin-left:10%;
+}
+
+textarea {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  resize:vertical;
+  border-radius:3px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-size: 1em;
+}
+
+
+button {
+
+	width:100%;
+	height:3em;
+	border-radius: 10px;
+	border: 2px solid;
+}
+
+@media screen and (min-width: 768px) {
+
+body{
+	text-align: left;
+}
+
+   label {	
+
+  	text-align: left;
+    width:40%;
+    font-size:1.25em;
+    line-height:2em;
+    padding-right: 8px;
+    font-weight:bold;
+
+	}
+input, select{
+	width:55%;
+	font-size:2em;
+    
+}
+
+label.radbutton{
+	margin-left:0%;
+	margin-top:20px;
+}
+
+input[type=checkbox], input[type=radio]{
+ 	width: 20%;
+}
+
+
+input[type=checkbox], input[type=radio]{
+    top: -10px;
+}
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+body{
+	text-align: left;
+}
+
+   label {	
+
+  	text-align: left;
+    width:20%;
+    font-size:1em;
+    line-height:1.5em;
+    padding-right: 8px;
+    font-weight:bold;
+
+	}
+input, select{
+	width:55%;
+	font-size:1.25em;
+    
+}
+
+label.radbutton{
+	margin-left:0%;
+	margin-top:20px;
+}
+
+input[type=checkbox], input[type=radio]{
+ 	width: 20%;
+}
+
+
+

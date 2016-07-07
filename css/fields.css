@@ -1,0 +1,98 @@
+
+#fullname:valid,   
+div > input[type="email"]:valid {
+/*div > input[type="tel"]:valid,
+div > input[type="date"]:valid,
+div > input[type="password"]:valid {
+*/  
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color:white;
+  color:#000;
+}
+
+#fullname:focus,
+div > input[type="text"]:focus,
+div > input[type="email"]:focus,
+div > input[type="tel"]:focus,
+div > input[type="date"]:focus,
+div > input[type="password"]:focus {
+  outline: 0;
+  background-color: lightgray;
+}
+
+
+
+div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
+div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),
+
+div > input[type="date"]:invalid:not(:focus):not(:placeholder-shown),
+div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) {
+ /* background: pink;*/
+}
+
+div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown) + label,
+div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) + label,
+div > input[type="password"]:invalid:not(:focus):not(:placeholder-shown) + label {
+  background:none;
+  background-color:#000;
+}
+
+
+
+div > input[type="text"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+div > input[type="email"]:invalid:focus:not(:placeholder-shown) ~ .requirements,
+div > input[type="password"]:invalid:focus:not(:placeholder-shown) ~ .requirements {
+  max-height: 200px;
+  padding: 0 30px 20px 50px;
+  background:none;
+  color:#000;
+}
+
+div .requirements {
+  padding: 0 30px 0 50px;
+  color: #999;
+  max-height: 0;
+  -webkit-transition: 0.28s;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-style: italic;
+}
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  background: #41D873;
+  color: black;
+  border: 0;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus + label, 
+input[type="tel"]:focus + label,
+input[type="email"]:focus + label,
+input[type="password"]:focus + label {
+  opacity: 0;
+  background:transparent;
+
+  background-color:lightgray;
+}  
+
+input:not(:placeholder-shown) {
+  background-color:white;
+  background-image:none;
+}
+
+body {
+  background: #333;
+  padding: 20px;
+  font-family: 'Merriweather', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
