@@ -20,10 +20,40 @@ div > input[type="tel"]:focus,
 div > input[type="date"]:focus,
 div > input[type="password"]:focus {
   outline: 0;
-  background-color: lightgray;
+  background-color: gray;
+  transition: background-color .5s ease-out;
+}
+
+div > input[type="text"]:hover,
+div > input[type="email"]:hover,
+div > input:hover, 
+#state:hover{
+  background-color:lightgray;
+  cursor: pointer;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  
+
+}
+/*option{
+  color:red;
 }
 
 
+
+option[value="CT"]{
+  color:red;
+}
+*/
+
+#state {
+  color:black;
+}
+option{
+  color:gray;
+  background-color: white;
+}
 
 div > input[type="text"]:invalid:not(:focus):not(:placeholder-shown),
 div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown),

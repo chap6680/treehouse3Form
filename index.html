@@ -82,8 +82,8 @@
                       </div>
                        
                     <div>
-                       <label>Telephone</label>
-                       <input type='tel' pattern='^\d{3}.\d{3}.\d{4}|\d{10}|\d{3}-\d{3}-\d{4}' placeholder='999.999.9999' name ="telephone      "> 
+                       <label for="phonenumber">Telephone</label>
+                       <input type='tel' pattern='^\d{3}.\d{3}.\d{4}|\d{10}|\d{3}-\d{3}-\d{4}' placeholder='999.999.9999' id="phonenumber" name ="phonenumber"> 
                     </div>
                                             
                     <div>
@@ -98,6 +98,7 @@
                     <div>
                         <label for="state">State</label>
                         <select id="state" name="state">
+                        	<option value="defaultx" class="optiondefault" selected disabled hidden>Choose State</option>
                             <option value="AL">AL</option>
                             <option value="AK">AK</option>
                             <option value="AZ">AZ</option>
@@ -158,7 +159,7 @@
                     
                     <div>
                         <label for="expect">Expected Use %</label>
-                        <input type="text" id="expect" pattern='^(100|[1-9]?[0-9])$' placeholder="% of likelihood you'll read this newsletter? (0-100)">
+                        <input type="text" id="expect" pattern='^(100|[1-9]?[0-9])$' name = "expect" placeholder="% of likelihood you'll read this newsletter? (0-100)">
                     </div>
                     
 
@@ -190,9 +191,8 @@
                     <h3>Other topics you'd like to hear about</h3>
    <!--                  <label class="textbx"><input type="textarea" rows="4" cols = "50" wrap="hard" id="textarea1" ><br>
     -->
-                
-                    <textarea name="message">
-                    </textarea>
+                	<label for="getcomment"></label>
+                    <textarea id="getcomment" name="comment"></textarea>
                 </FIELDSET>        
 
                     </form>
